@@ -1,0 +1,10 @@
+def fibonacci_sequence(n_terms=None, max_value=None):
+    sequence = []
+    a, b = 0, 1
+    while (n_terms is None or len(sequence) < n_terms) and (max_value is None or a < max_value):
+        sequence.append(a)
+        a, b = b, a + b
+    return sequence
+print(fibonacci_sequence(n_terms=10))
+print(fibonacci_sequence(max_value=100))
+

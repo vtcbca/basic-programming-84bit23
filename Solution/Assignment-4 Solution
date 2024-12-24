@@ -1,0 +1,4 @@
+string=input('Enter any string = ')
+rev=string[::-1]
+print(rev)
+
